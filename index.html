@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prabin Jamatia</title> 
@@ -8,16 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+</head>
+
+<body>
     <header class="header">
         <nav class="nav">
             <div class="nav-links">
                 <ul>
                     <li><a href="#home">HOME</a></li>
-                    <li><a href="#pics">PICS</a></li>
-                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#me">ME</a></li>
+                    <li><a href="#know">KNOW</a></li>
+                    <li><a href="trips.html">TRIPS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
@@ -25,11 +29,24 @@
         <div class="text-box" id="home">
             <h1>Prabin Jamatia</h1>
             <p>♓︎<br>be silly, be happy<br>Photographer<br>Unemployed</p>
-            <a href="#pics" class="button">Meow</a>
+            <a href="#me" class="button">Meow</a>
         </div>
     </header>
 
-    <section class="more" id="about">
+
+<section class="more" id="me">
+        <h1>ME</h1>
+        <p>nickname<br><b>BinBin</b><br></p>
+        
+        <div class="me-photos">
+            <img src="pictures/me2.JPG" alt="Me 1">
+            <img src="pictures/me.jpeg" alt="Me 2">
+            <img src="pictures/me1.JPG" alt="Me 3">
+        </div>
+    </section>
+
+
+<section class="more" id="know">
         <h1>Know more</h1>
         <p>what will you do<br> shu shu </p>
         <div class="more1">
@@ -42,30 +59,62 @@
                 <p>balls</p>
             </div>
             <div class="more-card">
+                <h3>Height</h3>
+                <p>177cm</p>
+            </div>
+        </div>
+        <div class="more1">
+            <div class="more-card">
                 <h3>Personality</h3>
                 <p>Annoying</p>
             </div>
-        </div>
+            <div class="more-card">
+                <h3>Edu</h3>
+                <p>Comp sci & eng</p>
+            </div>
+            <div class="more-card">
+                <h3>Hobby</h3>
+                <p>Annoying others</p>
+            </div>
     </section>  
 
-    <section class="pic" id="pics">
+
+
+
+
+<section class="pic" id="pics">
+
         <h1>PICTURES</h1>
-        <p>Some of my recent clicks</p>
-        
+        <p>Best clicks</p>
+
         <!-- Modern Grid Gallery -->
-        <div class="gallery-grid">
-    <img src="pictures/pic2.JPG" >
-    <img src="pictures/pic3.JPG" >
-    <img src="pictures/pic4.JPG" >
-    <img src="pictures/pic5.JPG" >
-    <img src="pictures/pic6.JPG" >
-</div>
+       <div class="gallery-grid">
+       <img src="pictures/pic2.JPG" >
+       <img src="pictures/pic3.JPG" >
+       <img src="pictures/pic4.JPG" >
+       <img src="pictures/pic5.JPG" >
+       <img src="pictures/pic6.JPG" > 
+        </div>
     </section>
 
-    <section class="more" id="contact" style="padding-bottom: 100px;">
-        <h1>Hit me up</h1>
+
+
+<section class="more" id="contact" style="padding-bottom: 100px;">
+        <h1>CONTACT</h1>
         <p>Unemployed but still busy.</p>
-        <a href="mailto:prabinjamatia30@gmail.com" class="button" style="color: #333; border-color: #333; margin-top: 20px;">Email Me</a>
+        <div class="social-links">
+            <a href="mailto:prabinjamatia30@gmail.com" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://instagram.com/silly.binn" target="_blank" class="icon-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/prabinjmt" target="_blank" class="icon-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
     </section>
+
+
+
+
+<footer class="footer">
+        <p>&copy; 2026 Prabin Jamatia. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
