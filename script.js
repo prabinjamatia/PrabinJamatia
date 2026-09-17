@@ -1,18 +1,3 @@
-// --- PEEKING CAT ANIMATION ---
-const meowBtn = document.querySelector('.text-box .button');
-const catHead = document.getElementById('peek-cat');
-
-// Checks if the buttons exist on the page before running (prevents errors on other pages)
-if (meowBtn && catHead) {
-    meowBtn.addEventListener('click', function(e) {
-        catHead.classList.add('show');
-        
-        // Wait 2 seconds, then slide it back up
-        setTimeout(function() {
-            catHead.classList.remove('show');
-        }, 2000);
-    });
-}
 
 // --- SECURITY FEATURES ---
 // 1. Prevents all image dragging
