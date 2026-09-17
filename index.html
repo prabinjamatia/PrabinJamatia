@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prabin Jamatia</title> 
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:;">
 
     <!-- Stylesheets & Fonts -->
     <link rel="stylesheet" href="style.css">
@@ -12,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
+
 <body>
 
     <!-- HERO / HEADER SECTION -->
@@ -20,8 +23,7 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="#home">HOME</a></li>
-                    <li><a href="#about-me">ABOUT</a></li>
-                    <li><a href="#me">ME</a></li>
+                    <li><a href="#about-me">ABOUT ME</a></li>
                     <li><a href="#know">KNOW</a></li>
                     <li><a href="trips.html">TRIPS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
@@ -38,11 +40,11 @@
 
     <!-- ABOUT ME SECTION -->
     <section class="about-split" id="about-me">
-        <div class="about-img-col">
-            <img src="pictures/me3.JPG" alt="About Prabin Jamatia">
+        <div class="about-img-col hidden-left">
+            <img src="pictures/me3.JPG" alt="About Prabin Jamatia" loading="lazy">
         </div>
         
-        <div class="about-text-col">
+        <div class="about-text-col hidden-right">
             <h2>About me</h2>
             <hr class="about-line">
             <p>My lens are my eyes, capturing the fleeting, beautiful moments that define story. Every click, tells a short story, and turn into timeless memories.</p>
@@ -56,9 +58,9 @@
         <p>nickname<br><b>BinBin</b></p>
         
         <div class="me-photos">
-            <img src="pictures/me2.JPG" alt="Me 1">
-            <img src="pictures/me.jpeg" alt="Me 2">
-            <img src="pictures/me1.JPG" alt="Me 3">
+            <img src="pictures/me2.JPG" alt="Me 1" loading="lazy">
+            <img src="pictures/me.jpeg" alt="Me 2" loading="lazy">
+            <img src="pictures/me1.JPG" alt="Me 3" loading="lazy">
         </div>
     </section>
 
@@ -104,11 +106,11 @@
         <p>Best clicks</p>
 
         <div class="gallery-grid">
-            <img src="pictures/pic4.JPG" alt="Gallery Photo 1">
-            <img src="pictures/pic5.JPG" alt="Gallery Photo 2">
-            <img src="pictures/pic6.JPG" alt="Gallery Photo 3">
-            <img src="pictures/pic3.JPG" alt="Gallery Photo 4">
-            <img src="pictures/pic2.JPG" alt="Gallery Photo 5"> 
+            <img src="pictures/pic4.JPG" alt="Gallery Photo 1" loading="lazy">
+            <img src="pictures/pic5.JPG" alt="Gallery Photo 2" loading="lazy">
+            <img src="pictures/pic6.JPG" alt="Gallery Photo 3" loading="lazy">
+            <img src="pictures/pic3.JPG" alt="Gallery Photo 4" loading="lazy">
+            <img src="pictures/pic2.JPG" alt="Gallery Photo 5" loading="lazy">
         </div>
     </section>
 
@@ -117,11 +119,16 @@
         <h1>CONTACT</h1>
         <p>Unemployed but still busy.</p>
 
-        <div class="social-links">
-            <a href="mailto:prabinjamatia30@gmail.com" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://instagram.com/silly.binn" target="_blank" rel="noopener noreferrer" class="icon-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://linkedin.com/in/prabinjmt" target="_blank" rel="noopener noreferrer" class="icon-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+       <div class="social-links">
+    <!-- Email -->
+    <a id="email-link" class="icon-link" style="cursor: pointer;" tabindex="0" role="button" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    
+    <!-- Instagram -->
+    <a id="ig-link" class="icon-link" style="cursor: pointer;" tabindex="0" role="button" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    
+    <!-- LinkedIn -->
+    <a id="li-link" class="icon-link" style="cursor: pointer;" tabindex="0" role="button" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+</div>
     </section>
 
 
@@ -130,6 +137,10 @@
         <a href="#" class="back-to-top">Back to Top <i class="fa-solid fa-chevron-up"></i></a>
         <p>&copy; 2026 Prabin Jamatia. All rights reserved.</p>
     </footer>
+
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
