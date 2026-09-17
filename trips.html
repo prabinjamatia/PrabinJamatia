@@ -3,33 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trips | Prabin Jamatia</title> 
+    <title>Trips - Prabin Jamatia</title> 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
-    <style>
-        /* A slightly shorter header specifically for the subpage */
-        .sub-header {
-            height: 15vh;
-            width: 100%;
-            background-color: #1a1f33; 
-            background-image: linear-gradient(to right, #42633c, #5d8c55);
-        }
-    </style>
-
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header class="sub-header">
         <nav class="nav">
             <div class="nav-links">
                 <ul>
-                    <!-- Notice these links point back to index.html -->
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="index.html#me">ME</a></li>
-                                        <li><a href="index.html#know">KNOW</a></li>
-
+                    <li><a href="index.html#home">HOME</a></li>
+                    <li><a href="index.html#about-me">ABOUT ME</a></li>
+                    <li><a href="index.html#know">KNOW</a></li>
                     <li><a href="trips.html">TRIPS</a></li>
                     <li><a href="index.html#contact">CONTACT</a></li>
                 </ul>
@@ -37,36 +27,57 @@
         </nav>
     </header>
 
-    <section class="pic" id="pics" style="padding-top: 50px;">
+    <!-- Trips Section -->
+    <section class="pic" id="trips-page">
         <h1>TRIPS</h1>
         <p>I love travelling</p>
-        
-        <div class="gallery-grid">
-            <!-- Trip 1 -->
+
+        <div class="trips-grid">
+            <!-- Link points to kori.html -->
             <a href="kori.html" class="trip-card">
                 <img src="pictures/kori/kori.JPG" alt="Kori Trek">
-                <h3>Kori Trek</h3>
+                <h3>Kori Trek <i class="fa-solid fa-location-dot location-icon"></i></h3>
+                <p class="trip-desc">3 day hike.</p>
             </a>
             
-            <!-- Trip 2 -->
+            <!-- Link points to jaisalmer.html -->
             <a href="jaisalmer.html" class="trip-card">
                 <img src="pictures/jaisalmer/jaisalmer.jpeg" alt="Jaisalmer">
-                <h3>Jaisalmer</h3>
+                <h3>Jaisalmer <i class="fa-solid fa-location-dot location-icon"></i></h3>
+                <p class="trip-desc">Golden City of India</p>
             </a>
             
-            <!-- Trip 3 -->
+            <!-- Link points to delhi.html -->
             <a href="delhi.html" class="trip-card">
                 <img src="pictures/delhi/delhi.PNG" alt="Delhi">
-                <h3>Delhi</h3>
+                <h3>Delhi <i class="fa-solid fa-location-dot location-icon"></i></h3>
+                <p class="trip-desc">Capital vibes and architecture.</p>
             </a>
+        </div>
+
+        <!-- Upcoming Trips Teaser -->
+        <div class="future-trips">
+            <h2>Next on the Map</h2>
+            <hr class="about-line" style="margin: 15px auto;">
+            <ul class="future-list">
+                <li><i class="fa-solid fa-map-pin"></i> Sikkim</li>
+                <li><i class="fa-solid fa-map-pin"></i> Mizoram</li>
+                <li><i class="fa-solid fa-map-pin"></i> Manipur</li>
+            </ul>
         </div>
     </section>
 
+    <!-- White Section for Back to Top -->
+    <div class="back-to-top-container">
+        <a href="#" class="back-to-top">Back to Top <i class="fa-solid fa-chevron-up"></i></a>
+    </div>
 
-<footer class="footer">
+    <!-- Dark Footer -->
+    <footer class="footer">
         <p>&copy; 2026 Prabin Jamatia. All rights reserved.</p>
     </footer>
 
-
+    <!-- Security & Interactions Script -->
+    <script src="script.js"></script>
 </body>
 </html>
