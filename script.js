@@ -14,6 +14,17 @@ if (meowBtn && catHead) {
     });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const turuBtn = document.getElementById("turuBtn");
+  const kuruSound = document.getElementById("kuruSound");
+
+  if (turuBtn && kuruSound) {
+    turuBtn.addEventListener("click", () => {
+      kuruSound.currentTime = 0; // Rewinds the sound so you can spam click it
+      kuruSound.play();
+    });
+  }
+});
 // --- SECURITY FEATURES ---
 // 1. Prevents all image dragging
 document.addEventListener('dragstart', function(event) {
